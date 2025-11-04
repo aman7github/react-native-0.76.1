@@ -17,30 +17,32 @@ import FormValidation from './FormValidation';
 import DataFetch from './DataFetch';
 import SignupSignin from './SignupSignin';
 import Blur from './Blur';
-
-
-const App=()=>{
-
-return <NavigationContainer>  
-         <MyTab />
-       </NavigationContainer>
-
-}
+import LocatioScreen from './LocatioScreen';
 
 
 // const App=()=>{
 
-// return <View style={{flex:1,borderWidth:5,justifyContent:"center",alignItems:'center'}} >
-
-//   {/* <FormValidation />
-//   <DataFetch />
-//   <SignupSignin /> */}
-//   {/* <Blur /> */}
-//  <Text>app</Text>
-// </View>
-
+// return <NavigationContainer>  
+//          <MyTab />
+//        </NavigationContainer>
 
 // }
+
+
+const App=()=>{
+
+return <View style={{flex:1,borderWidth:5,justifyContent:"center",alignItems:'center'}} >
+
+  {/* <FormValidation />
+  <DataFetch />
+  <SignupSignin /> */}
+  {/* <Blur /> */}
+ {/* <Text>app</Text> */}
+ <LocatioScreen />
+</View>
+
+
+}
 
 
 

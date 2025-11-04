@@ -1,11 +1,34 @@
-package com.myapp
-
+package com.anonymous.myapp
+import android.os.Bundle;             // Add this import for navigation
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
+import android.view.WindowManager      // Add import for stop screen recording without install any dependency
 
 class MainActivity : ReactActivity() {
+
+    /**
+   * below line added because of react-native nagivation from
+   * https://reactnavigation.org/docs/getting-started
+   */
+
+   override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+
+   /**
+   * enable screen protection (block screenshot/screen recording) 
+   */
+    window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
+
+  }
+
+  
+
+
+
+
+
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
